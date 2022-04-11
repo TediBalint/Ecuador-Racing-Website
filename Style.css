@@ -38,7 +38,7 @@
 tr
 {
     border: 1px solid black;
-=======
+}
 .carousel-item img
 {
     height: 30vh !important;
@@ -51,4 +51,21 @@ tr
         display: none;
     }
 
+}
+
+#bültetveny
+{
+    width: 50%;
+    height: 50%;
+}
+
+.twitter
+{
+    width: 15%;
+    height: 15%;
+}
+
+.asd
+{
+    margin-right: 10px;
 }
