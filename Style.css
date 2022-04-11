@@ -2,3 +2,15 @@
 {
     margin-top: 10%;
 }
+.carousel-item img
+{
+    height: 30vh !important;
+}
+/* telós nézet  */
+@media only screen and (max-width: 600px) 
+{
+    .carousel-control-prev,  .carousel-control-next, .carousel-indicators button
+    {
+        display: none;
+    }
+}
