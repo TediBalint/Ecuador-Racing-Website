@@ -38,17 +38,45 @@
 tr
 {
     border: 1px solid black;
-=======
+}
 .carousel-item img
 {
     height: 30vh !important;
 }
-/* telós nézet  */
-@media only screen and (max-width: 600px) 
+#MainBG
 {
-    .carousel-control-prev,  .carousel-control-next, .carousel-indicators button
-    {
-        display: none;
-    }
-
+    background-image: url("Main_BG.jpg");
+    background-size: cover;
 }
+li
+{
+    border: 3px black solid;
+}
+
+
+#mainmenudiv nav
+{
+    margin:auto;
+    width: 50%;
+    
+}
+/*
+#mainmenudiv div 
+{
+    margin: 0;
+    background-color: wheat;
+    text-align: center;
+    width: 25%;
+    height: 25%;
+    border: 3px solid black;
+    display: inline-flex;
+}
+#mainmenudiv div a
+{
+    margin: auto 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 5vh;
+}*/
