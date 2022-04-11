@@ -2,6 +2,43 @@
 {
     margin-top: 10%;
 }
+
+
+#menu
+{
+    background-color: rgba(255, 224, 51, 0.945);
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#varhatoversenyeink
+{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+#rendezvenyek
+{
+    margin-top: 1%;
+    margin-left:1%;
+}
+
+#elerhetosegink
+{
+    margin-top: 1%;
+    margin-left:1%;
+}
+
+#table
+{
+    margin: auto;
+}
+
+tr
+{
+    border: 1px solid black;
+=======
 .carousel-item img
 {
     height: 30vh !important;
@@ -13,4 +50,5 @@
     {
         display: none;
     }
+
 }
