@@ -55,7 +55,7 @@ li
 
 
 
-}
+
 
 #bültetveny
 {
@@ -79,6 +79,22 @@ li
     margin:auto;
     width: 50%;
     
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.versenyek
+{
+    margin-bottom: 50px;
+}
+
+.valami
+{
+    margin-bottom: 20px;
 }
 /*
 #mainmenudiv div 
