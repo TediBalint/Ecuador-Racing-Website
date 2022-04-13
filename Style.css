@@ -48,13 +48,10 @@ tr
     background-image: url("Main_BG.jpg");
     background-size: cover;
 }
-li
-{
-    border: 3px black solid;
-}
 
 
 
+/* 
 }
 
 #bültetveny
@@ -78,18 +75,28 @@ li
 {
     margin:auto;
     width: 50%;
-    
+    height: 50%;
+    background: none;
 }
-/*
+
 #mainmenudiv div 
 {
-    margin: 0;
-    background-color: wheat;
-    text-align: center;
-    width: 25%;
-    height: 25%;
-    border: 3px solid black;
-    display: inline-flex;
+    background: none;
+} */
+@media only screen and (max-width: 600px) {
+    #tudas
+    {
+        width: 80%!important;
+    }
+    #alkalmassag
+    {
+        width: 100%!important;
+    }
+    label
+    {
+        font-size: 0.9rem;
+    }
+
 }
 #mainmenudiv div a
 {
@@ -99,5 +106,5 @@ li
     text-decoration: none;
     vertical-align: middle;
     font-size: 5vh;
-}*/
+}
 
