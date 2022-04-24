@@ -10,61 +10,146 @@
     <title>Eredményeink</title>
 </head>
 <body>
-    <div class="container w-100">
-        <nav class="navbar navbar-expand-md" id="menu">
-            <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="Index.html">Kezdőlap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Autónk.html">Autónk</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Álláslehetőség.html">Álláslehetőség</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Rólunk.html">Rólunk</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Támogatás.html">Támogass minket</a>
-                        </li>
-                </ul>
+    
+            <div id="main_menu" class="w-100">
+                <nav class="navbar navbar-expand-lg navbar-expand-md  navbar-expand-sm navbar-primary  ">
+                    <div class="container-fluid ">
+                        <ul class="navbar-nav me-auto mb-2 mx-auto mb-lg-0">
+                         
+                          <li class="nav-item mx-3">
+                            <a class="nav-link active " aria-current="page" href="Index.html">Kezdőlap</a>
+                          </li>
+                          <li class="nav-item mx-3">
+                            <a class="nav-link" href="Rólunk.html" >Rólunk</a>
+                          </li>
+                          <li class="nav-item mx-3">
+                            <a class="nav-link " href="Álláslehetőség.html">Álláslehetőség</a>
+                          </li>
+                          <li class="nav-item mx-3">
+                            <a class="nav-link" href="Autóink.html">Autóink</a>
+                          </li>
+                          
+                        </ul>
+                       
+                      </div>
+                    </div>
+                  </nav>
+            
+             </div>
+    
+          
+            <div id="carouselPictures" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPictures" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselPictures" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselPictures" data-bs-slide-to="2"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Hungaroring.png" alt="Magyar Nagydíj" class="d-block w-100" >
+                        <div class="CarouselText fw-bold ">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                                    <h1 >Hungaroring</h1> 
+                                    <p>
+                                        Ezen a versenyen az esős időmérő miatt utolsó helyről indultunk, de a versenyen felküzdöttük magunkat 7. és 9. helyre.
+                                    </p>
+                                </div>
+                            </div>
+                           
+                        </div >
+                        
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="images/Monza.png" alt="Olasz Nagydíj" class="d-block w-100 ">
+                        <div class="CarouselText  fw-bold ">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                                    <h1 >Imola</h1> 
+                                    <p>
+                                        Imolában a 3. és 4. rajtkockáról indultunk és egy hatalmas taktikai húzásnak köszönhetően az 1. és 3. pozícióban értünk célba a futamon.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                                
+                            
+                        </div>
+                        
+                    </div>
+                   
+                    
+                   
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPictures" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPictures" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+              
             </div>
-        </nav>
-        <p>A külömböző versenyeken elért legjobb eredményeinket az lábbi táblázatban lehet megtekinteni.</p>
-    </div>
-    <div class="col-12 col-md-4" id="table">
-        <table class="table table-light table-hover">
-            <tr>
-                <th colspan="2" class="text-center bg-warning">Eredményeink</th>
-            </tr>
-            <tr>
-                <td class="text-center">XY Verseny</td>
-                <td class="text-center ps-3">1. Helyezett</td>
-            </tr>
-            <tr>
-                <td class="text-center">XY Verseny</td>
-                <td class="text-center ps-3">2. Helyezett</td>         
-            </tr>
-            <tr>
-                <td class="text-center">XY Verseny</td>
-                <td class="text-center ps-3">4. Helyezett</td>         
-            </tr>
-            <tr>
-                <td class="text-center">XY Verseny</td>
-                <td class="text-center ps-3">2. Helyezett</td>         
-            </tr>
-            <tr>
-                <td class="text-center">XY Verseny</td>
-                <td class="text-center ps-3">6. Helyezett</td>         
-            </tr>
-        </table>
-    </div>
+        
+          
+
+
+          
+        <div class="col-12 col-md-10 col-lg-8 my-3" id="table">
+            <table class="table table-light table-bordered border-dark table-hover">
+                <thead>
+                    <tr>
+                        <th colspan="5" class="text-center bg-warning">Eredményeink</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td id="Verseny"></td>
+                        <td class="text-center" colspan="2">Időmérő</td>
+                        <td class="text-center" colspan="2">Verseny</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Pilóta</td>
+                        <td class="text-center ">Pilota1</td>
+                        <td class="text-center ">Pilota2</td>
+                        <td class="text-center">Pilota1</td>
+                        <td class="text-center">Pilota2</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Bahrain</td>
+                        <td class="text-center ">1</td>
+                        <td class="text-center ">3</td>
+                        <td class="text-center">4</td>
+                        <td class="text-center">2</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Imola</td>
+                        <td class="text-center ">4</td>
+                        <td class="text-center ">7</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">3</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Hungaroring</td>
+                        <td class="text-center ">1</td>
+                        <td class="text-center ">2</td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">1</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Sauda Rabia</td>
+                        <td class="text-center ">2</td>
+                        <td class="text-center ">3</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">9</td>
+                    </tr>
+                </tbody>
+                  
+
+            </table>
+        </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+
 </body>
 </html>

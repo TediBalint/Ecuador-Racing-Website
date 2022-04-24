@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container w-100">
-        <nav class="navbar navbar-expand-lg navbar-expand-md  navbar-expand-sm navbar-primary bg-light">
+        <nav class="navbar navbar-expand-lg navbar-expand-md menu navbar-expand-sm navbar-primary mb-2 py-0">
             <div class="container-fluid ">
              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,16 +19,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mx-auto mb-lg-0">
                  
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link active " aria-current="page" href="Index.html">Főmenü</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link " href="Eredményeink.html">Eredményeink</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link" href="Autobeállítás.html">Autobeállításaink</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link" href="Támogatás.html" >Támogass</a>
                   </li>
                 </ul>
@@ -46,28 +46,37 @@
                       <label for="nev">Kérjük írja le teljes nevét.</label><br>
                       <input type="text" class="form-control " id="nev" name="Név">
                   </p>
-                  <p>
+                  <!-- <p>
                       <label  for="alkalmassag">Kérjük írja le, hogy miért alkalmas erre a munkára.</label><br>
                       <input type="text" class="form-control " id="alkalmassag" name="Alkalmasság"></p>
-                  </p>
-                  <p id="sel1">
-                      <label for="tudas">Válassza ki milyen végzettséget szerzett</label><br>
-                      <select id="tudas" oninput="optionselect()" class="form-select " aria-label="Default select example" size="5">
-                          <option >8 év általános</option>
-                          <option >Érettségi</option>
-                          <option >Egyetem</option>
-                          <option >Diploma</option>
-                          <option id="egyeb">Egyéb</option>
-                      </select>
-                  </p>
+                  </p> -->
+                  <label class="mt-2" for="latogatas">Kérjük válassza ki munkakörét</label>
+                  <select id="foglalkozas" class="form-select" aria-label="Default select example" size="5">
+                      <option>Car mechanic</option>
+                      <option>Engineer</option>
+                      <option>Media Guy</option>
+                      <option>14:30 - 15:00</option>
+                      <option>16:00 - 16:30</option>
+                  </select>
+                   <option></option>
+                 </select>
                 </div>
-
                 <div class="col-12 col-lg-12 col-sm-12 col-md-6">
                   <img class="img-fluid" src="images/Italy1.png" alt="Italy1">
                 </div>
               </div>
               <div class="row">
                 <div class="col-12 col-lg-12 col-sm-12 col-md-6">
+                  <p id="sel1">
+                    <label for="tudas">Válassza ki milyen végzettséget szerzett</label><br>
+                    <select id="tudas" oninput="optionselect()" class="form-select " aria-label="Default select example" size="5">
+                        <option >8 év általános</option>
+                        <option >Érettségi</option>
+                        <option >Egyetem</option>
+                        <option >Diploma</option>
+                        <option id="egyeb">Egyéb</option>
+                    </select>
+                </p>
                   <label class="mt-2" for="latogatas">Mikor tudna cégünkhöz ellátogatni?</label>
                   <select id="latogatas" class="form-select" aria-label="Default select example" size="5">
                       <option>10:00 - 10:30</option>
@@ -87,7 +96,7 @@
               
 
                
-        </div>
+         </div>
         </form>  
     </div>  
     <script src="Script.js"></script>
