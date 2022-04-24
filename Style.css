@@ -3,7 +3,13 @@
     margin-top: 10%;
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
 #menu
 {
     background-color: rgba(255, 224, 51, 0.945);
@@ -43,17 +49,15 @@ tr
 {
     height: 30vh !important;
 }
-#MainBG
+#main_bg_video
 {
-    background-image: url("Main_BG.jpg");
-    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100%;
 }
-
-
-
-/* 
-}
-
 #bültetveny
 {
     width: 50%;
@@ -70,8 +74,19 @@ tr
 {
     margin-right: 10px;
 }
+#main_menu
+{
+    margin-top: 0;
+    position: absolute;
+}
+#main_menu nav  div ul li a
+{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(212,175,55)
+}
 
-#mainmenudiv nav
+ /* #mainmenudiv nav
 {
     margin:auto;
     width: 50%;
@@ -82,8 +97,18 @@ tr
 #mainmenudiv div 
 {
     background: none;
-} */
-@media only screen and (max-width: 600px) {
+} 
+#mainmenudiv div a
+{
+    margin: auto 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 5vh;
+}  */
+@media only screen and (max-width: 600px) 
+{
     #tudas
     {
         width: 80%!important;
@@ -96,15 +121,34 @@ tr
     {
         font-size: 0.9rem;
     }
+    
+   
 
 }
-#mainmenudiv div a
+@media only screen and (max-width: 576px)
 {
-    margin: auto 0;
-    height: 50%;
-    width: 100%;
-    text-decoration: none;
-    vertical-align: middle;
-    font-size: 5vh;
+    #main_menu nav  div ul
+    {
+        margin-left: 0!important;
+        margin-right: 0!important;
+        
+    }
+    
+  
+}
+@media only screen and (max-width: 776px)
+{
+    #main_menu nav  div ul li a
+    {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 476px)
+{
+    #main_menu nav  div ul li a
+    {
+        font-size: 0.9rem;
+    }
+
 }
 

@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class="container w-100">
-        <nav class="navbar navbar-expand-lg  navbar-primary bg-light">
+        <nav class="navbar navbar-expand-lg navbar-expand-md  navbar-expand-sm navbar-primary bg-light">
             <div class="container-fluid ">
              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mx-auto mb-lg-0">
                  
                   <li class="nav-item">
                     <a class="nav-link active " aria-current="page" href="Index.html">Főmenü</a>
@@ -39,39 +39,54 @@
         
         <form action=""> 
             <div class="container">
-                <p>Amennyiben szeretne csapatunknál dolgozni kérjük töltse ki az alábbi kérdéseket.</p>
-            <fieldset id="form">
-                <p>
-                    <label for="nev">Kérjük írja le teljes nevét.</label><br>
-                    <input type="text" class="form-control w-50" id="nev" name="Név">
-                </p>
-               
-           
-                <p>
-                    <label  for="alkalmassag">Kérjük írja le, hogy miért alkalmas erre a munkára.</label><br>
-                    <input type="text" class="form-control w-50" id="alkalmassag" name="Alkalmasság"></p>
-                </p>
-                <p id="sel1">
-                    <label for="tudas">Válassza ki milyen végzettséget szerzett</label><br>
-                    <select id="tudas" class="form-select w-50" aria-label="Default select example" size="5">
-                        <option >8 év általános</option>
-                        <option >Érettségi</option>
-                        <option >Egyetem</option>
-                        <option >Diploma</option>
-                        <option id="egyeb" onclick="Form1()" >Egyéb</option>
-                    </select>
-                </p>
+              <div class="row">
+                <div class="col-12 col-lg-12 col-sm-12 col-md-6">
+                  <p>Amennyiben szeretne csapatunknál dolgozni kérjük töltse ki az alábbi kérdéseket.</p>
+                  <p>
+                      <label for="nev">Kérjük írja le teljes nevét.</label><br>
+                      <input type="text" class="form-control " id="nev" name="Név">
+                  </p>
+                  <p>
+                      <label  for="alkalmassag">Kérjük írja le, hogy miért alkalmas erre a munkára.</label><br>
+                      <input type="text" class="form-control " id="alkalmassag" name="Alkalmasság"></p>
+                  </p>
+                  <p id="sel1">
+                      <label for="tudas">Válassza ki milyen végzettséget szerzett</label><br>
+                      <select id="tudas" oninput="optionselect()" class="form-select " aria-label="Default select example" size="5">
+                          <option >8 év általános</option>
+                          <option >Érettségi</option>
+                          <option >Egyetem</option>
+                          <option >Diploma</option>
+                          <option id="egyeb">Egyéb</option>
+                      </select>
+                  </p>
+                </div>
 
-                <label for="latogatas">Mikor tudna cégünkhöz ellátogatni?</label>
-                <select id="latogatas" class="form-select w-50" aria-label="Default select example" size="5">
-                    <option>10:00 - 10:30</option>
-                    <option>11:30 - 12:00</option>
-                    <option>13:00 - 13:30</option>
-                    <option>14:30 - 15:00</option>
-                    <option>16:00 - 16:30</option>
-                </select>
-                <button type="submit" class="my-3 btn btn-primary">Submit</button>
-          </fieldset>
+                <div class="col-12 col-lg-12 col-sm-12 col-md-6">
+                  <img class="img-fluid" src="images/Italy1.png" alt="Italy1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-12 col-sm-12 col-md-6">
+                  <label class="mt-2" for="latogatas">Mikor tudna cégünkhöz ellátogatni?</label>
+                  <select id="latogatas" class="form-select" aria-label="Default select example" size="5">
+                      <option>10:00 - 10:30</option>
+                      <option>11:30 - 12:00</option>
+                      <option>13:00 - 13:30</option>
+                      <option>14:30 - 15:00</option>
+                      <option>16:00 - 16:30</option>
+                  </select>
+                  <button type="submit" class="my-3 btn btn-primary">Submit</button>
+           
+                </div>
+                <div class="col-12 col-lg-12 col-sm-12 col-md-6">
+                  <img class="img-fluid" src="images/Hungaroring.png" alt="Hungaroring">
+                </div>
+              </div>
+              
+              
+
+               
         </div>
         </form>  
     </div>  
