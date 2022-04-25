@@ -89,7 +89,10 @@ tr
     height: 30%;
     max-width: 95%;
 }
-
+.vissza
+{
+    display: none;
+}
 .asd
 {
     margin-right: 10px;
@@ -143,6 +146,11 @@ tr
     {
         display: none;
     }
+    .menu div ul li a
+    {
+        font-size: 1rem;
+
+    }
 }
 @media only screen and (max-width: 600px) 
 {
@@ -161,6 +169,14 @@ tr
     .carousel-indicators
     {
         display: none;
+    }
+    .menu div ul li a
+    {
+        font-size: 0.8rem;
+    }
+    .vissza
+    {
+        display: block;
     }
     
 }
@@ -190,6 +206,11 @@ tr
     {
         font-size: 0.9rem;
     }
+    .menu div ul li a
+    {
+        font-size: 0.6rem;
+
+    }
     
 }
 @media only screen and (max-width: 420px)
@@ -198,7 +219,16 @@ tr
     {
         font-size: 0.6rem;
     }
+    .menu div ul li a
+    {
+        font-size: 0.45rem;
 
+    }
+    .menu div ul li 
+    {
+        margin-left: 1%!important;
+        margin-right: 1%!important;
+    }
 }
 
 

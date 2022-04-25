@@ -41,6 +41,10 @@ function optionselect()
         RemoveById('egyeb_label');
     }
 }
+function Submit()
+{
+    
+}
 // function Table
 // {
     
