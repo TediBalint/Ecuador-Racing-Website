@@ -10,6 +10,15 @@ body {
   -ms-overflow-style: none;  
   scrollbar-width: none;  
 }
+.navbar-toggler-icon
+{
+    z-index: 2;
+}
+/* .BG
+{
+    /background-image: url('images/Hungaroring.png');
+    background-size: cover; 
+} */
 .menu
 {
     background-color: rgb(233, 181, 10);
@@ -17,6 +26,10 @@ body {
 .menu div ul li a
 {
     font-size: 1.6rem;
+}
+.card
+{
+    height: max-content;
 }
 #Verseny
 {
@@ -66,14 +79,15 @@ tr
 }
 #bültetveny
 {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .twitter
 {
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 30%;
+    max-width: 95%;
 }
 
 .asd
