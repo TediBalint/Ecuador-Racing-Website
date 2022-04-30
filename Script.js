@@ -33,7 +33,7 @@ function optionselect()
    
     if(document.getElementById('egyeb').selected)
     {
-        AddInput('sel1', 'text', 'form-control w-50 mb-3', 'egyeb_text', 'egyeb_label', 'Kérjük írja le egyéb végzettségét', 'mt-2');
+        AddInput('sel1', 'text', 'form-control  mb-3', 'egyeb_text', 'egyeb_label', 'Kérjük írja le egyéb végzettségét', 'mt-2');
     }
     else
     {

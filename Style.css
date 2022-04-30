@@ -75,7 +75,7 @@ tr
     top: 0;
     bottom: 0;
     width: 100%;
-    width: 100%;
+
 }
 #bültetveny
 {
@@ -132,7 +132,7 @@ tr
           font-size: 1.4rem;
       }
 }
-@media only screen and (max-width: 776px)
+@media only screen and (max-width: 767px)
 {
     #main_menu nav  div ul li a
     {
@@ -208,7 +208,7 @@ tr
     }
     .menu div ul li a
     {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
 
     }
     
@@ -221,7 +221,7 @@ tr
     }
     .menu div ul li a
     {
-        font-size: 0.45rem;
+        font-size: 0.6rem;
 
     }
     .menu div ul li 
