@@ -6,30 +6,42 @@
 ::-webkit-scrollbar {
     display: none;
 }
-body {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+body 
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+ 
 }
+ .BG
+{
+    background-image: url(images/BG_Bahrain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
 .navbar-toggler-icon
 {
     z-index: 2;
 }
-/* .BG
+.card
 {
-    /background-image: url('images/Hungaroring.png');
-    background-size: cover; 
-} */
+    background-color: rgba(0,0,0,0);
+    border: none;
+    height: max-content;
+}
+
 .menu
 {
-    background-color: rgb(233, 181, 10);
+    /* background-color: rgb(233, 181, 10); */
+    font-weight: bold;
 }
 .menu div ul li a
 {
     font-size: 1.6rem;
 }
-.card
+#oszlop1
 {
-    height: max-content;
+    width: 13%;
 }
 #Verseny
 {
@@ -54,12 +66,48 @@ body {
     margin-top: 1%;
     margin-left:1%;
 }
-
+/* Mark input boxes that gets an error on validation: */
+input.invalid 
+{
+    background-color: #ffdddd;
+}
+  
+  /* Hide all steps by default: */
+.tab 
+{
+    display: none;
+}
+.step 
+{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+#allas_form
+{
+    padding: 1%;
+    border-radius: 10px;
+    border: rgba(50,  50, 50, 0.7) 3px solid;
+    font-size: 1.8rem;
+}
+.step.active 
+{
+    opacity: 1;
+}
 #table
 {
     margin: auto;
 }
-
+#form_indicator
+{
+    text-align:center;
+    margin-top: 7px;
+}
 tr
 {
     border: 1px solid black;
@@ -67,6 +115,10 @@ tr
 .carousel-item img
 {
     height: 100vh !important;
+}
+.vissza
+{
+    text-decoration: none;
 }
 #main_bg_video
 {
@@ -89,7 +141,8 @@ tr
     height: 30%;
     max-width: 95%;
 }
-.vissza
+.vissza button
+
 {
     display: none;
 }
@@ -109,9 +162,10 @@ tr
     font-weight: bold;
     color: rgb(212,175,55)
 }
+
 .CarouselText
 {
-    color: rgb(45, 45, 45);
+    color: rgb(30,  30, 30);
     margin-left: 1%;
     margin-top: auto;
     height: min-content;
@@ -123,17 +177,28 @@ tr
     position: absolute;
 }
 
- 
 
+ 
+@media only screen and (max-width: 1300px ) 
+{
+    #allas_form
+    {
+        border: none;
+        
+    }
+}
 @media only screen and (max-width: 1195px ) 
 {
-      .CarouselText
-      {
-          font-size: 1.4rem;
-      }
+    
+    .CarouselText
+    {
+        font-size: 1.4rem;
+    }
 }
 @media only screen and (max-width: 767px)
 {
+    
+    
     #main_menu nav  div ul li a
     {
         font-size: 1.4rem;
@@ -148,20 +213,12 @@ tr
     }
     .menu div ul li a
     {
-        font-size: 1rem;
+        font-size: 1.2rem;
 
     }
 }
 @media only screen and (max-width: 600px) 
 {
-    #tudas
-    {
-        width: 80%!important;
-    }
-    #alkalmassag
-    {
-        width: 100%!important;
-    }
     label
     {
         font-size: 0.9rem;
@@ -172,22 +229,30 @@ tr
     }
     .menu div ul li a
     {
-        font-size: 0.8rem;
+        font-size: 1.4rem;
     }
-    .vissza
+    .vissza button
     {
         display: block;
+    }
+    #allas_form
+    {
+        font-size: 1.5rem;
     }
     
 }
 @media only screen and (max-width: 576px)
 {
-    #main_menu nav  div ul
+    #allas_form
+    {
+        font-size: 1.3rem;
+    }
+    /* #main_menu nav  div ul
     {
         margin-left: 0!important;
         margin-right: 0!important;
         
-    }
+    } */
     .CarouselText
     {
         font-size: 1rem;
@@ -195,12 +260,23 @@ tr
     
   
 }
-
+@media only screen and (max-height: 600px) 
+{
+    #main_bg_video
+    {
+        display: block!important;
+    }
+    #main_BG
+    {
+        background-image: none!important;
+    }
+}
+       
 @media only screen and (max-width: 486px)
 {
     #main_menu nav  div ul li a
     {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .CarouselText
     {
@@ -208,8 +284,23 @@ tr
     }
     .menu div ul li a
     {
-        font-size: 0.7rem;
-
+        font-size: 1.3rem;
+    }
+    .BG
+    {
+        background-image: url(images/BG_Bahrain.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    #main_BG
+    {
+        background-image: url(images/Hungaroring_Telo1.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    #main_bg_video
+    {
+        display: none;
     }
     
 }
@@ -221,7 +312,7 @@ tr
     }
     .menu div ul li a
     {
-        font-size: 0.6rem;
+        font-size: 1.2rem;
 
     }
     .menu div ul li 
