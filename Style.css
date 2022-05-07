@@ -13,6 +13,10 @@ body
     scrollbar-width: none;  
  
 }
+.Card_Car
+{
+    border-radius: 30px;
+}
  .BG
 {
     background-image: url(images/BG_Bahrain.png);
@@ -23,7 +27,7 @@ body
 {
     z-index: 2;
 }
-.card
+.Card_Rolunk
 {
     background-color: rgba(0,0,0,0);
     border: none;
@@ -32,12 +36,16 @@ body
 
 .menu
 {
-    /* background-color: rgb(233, 181, 10); */
     font-weight: bold;
 }
 .menu div ul li a
 {
+    color: rgb(212,175,55);
     font-size: 1.6rem;
+}
+.menu div ul li a:hover
+{
+    color: rgb(212,175,55)!important;
 }
 #oszlop1
 {
@@ -108,6 +116,7 @@ input.invalid
     text-align:center;
     margin-top: 7px;
 }
+
 tr
 {
     border: 1px solid black;
@@ -128,6 +137,11 @@ tr
     bottom: 0;
     width: 100%;
 
+}
+.video
+{
+    width: 100%;
+    z-index: -1;
 }
 #bültetveny
 {
@@ -247,12 +261,6 @@ tr
     {
         font-size: 1.3rem;
     }
-    /* #main_menu nav  div ul
-    {
-        margin-left: 0!important;
-        margin-right: 0!important;
-        
-    } */
     .CarouselText
     {
         font-size: 1rem;
@@ -269,6 +277,14 @@ tr
     #main_BG
     {
         background-image: none!important;
+    }
+    .navbar-expand-sm .navbar-nav
+    {
+        flex-direction: row!important;
+    }
+    #main_menu nav  div ul li a
+    {
+        font-size: 0.8rem!important;
     }
 }
        
