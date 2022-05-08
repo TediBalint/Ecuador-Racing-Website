@@ -17,6 +17,15 @@ body
 {
     border-radius: 30px;
 }
+.Card_Car img
+{
+    height: 111px;
+    width: unset;
+}
+.carousel_phone_img
+{
+    display: none;
+}
  .BG
 {
     background-image: url(images/BG_Bahrain.png);
@@ -33,7 +42,6 @@ body
     border: none;
     height: max-content;
 }
-
 .menu
 {
     font-weight: bold;
@@ -253,6 +261,10 @@ tr
     {
         font-size: 1.5rem;
     }
+    .Card_Car img
+    {
+        height: 160px;
+    }
     
 }
 @media only screen and (max-width: 576px)
@@ -318,6 +330,17 @@ tr
     {
         display: none;
     }
+    @media only screen and (min-height: 600px){
+        .carousel_Lg_img
+        {
+            display: none!important;
+        }
+        .carousel_phone_img
+        {
+            display: block!important;
+        }
+    }
+   
     
 }
 @media only screen and (max-width: 420px)
