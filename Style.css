@@ -13,9 +13,24 @@ body
     scrollbar-width: none;  
  
 }
+#autoink
+{
+    background-color: rgb(67, 67, 65);
+}
+#cars_bg
+{
+    background-repeat: repeat!important;
+    padding-bottom: 36rem;
+}
+.card-text
+{
+    
+    font-size: 0.9rem;
+    text-align: justify;
+}
 .Card_Car
 {
-    border-radius: 30px;
+    border-radius: 40px;
 }
 .Card_Car img
 {
@@ -23,6 +38,10 @@ body
     width: unset;
 }
 .carousel_phone_img
+{
+    display: none;
+}
+.carousel_md_img
 {
     display: none;
 }
@@ -133,10 +152,6 @@ tr
 {
     height: 100vh !important;
 }
-.vissza
-{
-    text-decoration: none;
-}
 #main_bg_video
 {
     z-index: -1;
@@ -163,31 +178,26 @@ tr
     height: 30%;
     max-width: 95%;
 }
-.vissza button
-
-{
-    display: none;
-}
 .asd
 {
     margin-right: 10px;
 }
-#main_menu
+.main_menu
 {
     z-index: 1;
     margin-top: 0;
     position: absolute;
 }
-#main_menu nav  div ul li a
+.main_menu nav  div ul li a
 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: rgb(212,175,55)
+    color: rgb(212,175,55)!important;
 }
 
 .CarouselText
 {
-    color: rgb(30,  30, 30);
+    color: rgb(10,  10, 10);
     margin-left: 1%;
     margin-top: auto;
     height: min-content;
@@ -206,22 +216,61 @@ tr
     #allas_form
     {
         border: none;
-        
     }
 }
+    
 @media only screen and (max-width: 1195px ) 
 {
-    
+    /* tablet */
+    @media only screen and (min-height: 720px)
+    {
+        #main_bg_video
+        {
+            display: none!important;
+        }
+        .BG
+        {
+            background-image: url(images/Bahrain_md.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #main_BG
+        {
+            background-image: url(images/Hungaroring_md.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .carousel_Lg_img
+        {
+            display: none!important;
+        }
+        .carousel_phone_img
+        {
+            display: none!important;
+        }
+        .carousel_md_img
+        {
+            display: block!important;
+        }
+        .main_menu nav div ul li a
+        {
+           font-size: 1.9rem;
+        }  
+
+    }
     .CarouselText
     {
         font-size: 1.4rem;
     }
+
+
+    
 }
 @media only screen and (max-width: 767px)
 {
     
     
-    #main_menu nav  div ul li a
+    .main_menu nav  div ul li a
     {
         font-size: 1.4rem;
     }
@@ -238,9 +287,17 @@ tr
         font-size: 1.2rem;
 
     }
+    #cars_bg
+    {
+        padding-bottom: 0;
+    }
 }
 @media only screen and (max-width: 600px) 
 {
+    .carousel-control-prev
+    {
+        display: none!important;
+    }
     label
     {
         font-size: 0.9rem;
@@ -253,9 +310,9 @@ tr
     {
         font-size: 1.4rem;
     }
-    .vissza button
+    #cars_bg
     {
-        display: block;
+        padding-bottom: 0;
     }
     #allas_form
     {
@@ -269,6 +326,7 @@ tr
 }
 @media only screen and (max-width: 576px)
 {
+    
     #allas_form
     {
         font-size: 1.3rem;
@@ -294,7 +352,7 @@ tr
     {
         flex-direction: row!important;
     }
-    #main_menu nav  div ul li a
+    .main_menu nav  div ul li a
     {
         font-size: 0.8rem!important;
     }
@@ -302,7 +360,7 @@ tr
        
 @media only screen and (max-width: 486px)
 {
-    #main_menu nav  div ul li a
+    .main_menu nav  div ul li a
     {
         font-size: 1.3rem;
     }
@@ -322,7 +380,7 @@ tr
     }
     #main_BG
     {
-        background-image: url(images/Hungaroring_Telo1.png);
+        background-image: url(images/Hungaroring_sm.png);
         background-size: auto;
         background-repeat: no-repeat;
     }
@@ -330,7 +388,12 @@ tr
     {
         display: none;
     }
-    @media only screen and (min-height: 600px){
+    @media only screen and (min-height: 600px)
+    {
+        .main_menu nav div ul
+        {
+            margin-left: 0!important;
+        }  
         .carousel_Lg_img
         {
             display: none!important;
@@ -339,19 +402,43 @@ tr
         {
             display: block!important;
         }
+        .carousel_md_img
+        {
+            display: none!important;
+        }
     }
    
-    
+  
 }
+
 @media only screen and (max-width: 420px)
 {
-    .CarouselText
+
+    @media only screen and (min-height: 600px) 
     {
-        font-size: 0.6rem;
+        .CarouselText
+        {
+            font-size: 1rem!important;
+        }
+        #first_card
+        {
+            margin-top: 73%;
+        }
+        .video
+        {
+            display: none;
+        }
+    }
+    @media only screen and (max-height: 600px) 
+    {
+        .CarouselText
+        {
+            font-size: 0.5rem!important;
+        }
     }
     .menu div ul li a
     {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
 
     }
     .menu div ul li 

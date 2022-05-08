@@ -8,55 +8,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autóink</title>
 </head>
-<body class="BG">
-  <div id="main_menu" class=" w-100">
+<body id="autoink">
+ 
+  <div class="main_menu w-100">
     <nav class="navbar navbar-expand-sm  navbar-light mx-auto py-0">
       <div class="container-fluid mx-auto" >
-        <ul class="navbar-nav  mx-auto">
-          <li class="nav-item mb-4 mx-3">
-            <a class="nav-link" href="Index.html">Kezdőlap</a>
-          </li>
-          <li class="nav-item mb-4 mx-3">
-            <a class="nav-link " href="Eredményeink.html">Eredményeink</a>
-          </li>
-          <li class="nav-item mb-4 mx-3">
-            <a class="nav-link " href="Rólunk.html">Rólunk</a>
-          </li>
-          <li class="nav-item mb-4 mx-3">
-            <a class="nav-link" href="Álláslehetőség.html">Álláslehetőség</a>
-          </li>
-          
-          
-        </ul>
+          <ul class="navbar-nav  mx-auto">
+            <li class="nav-item mb-4 mx-3">
+              <a class="nav-link" href="Index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item mb-4 mx-3">
+              <a class="nav-link " href="Eredményeink.html">Eredményeink</a>
+            </li>
+            <li class="nav-item mb-4 mx-3">
+              <a class="nav-link " href="Rólunk.html">Rólunk</a>
+            </li>
+            <li class="nav-item mb-4 mx-3">
+              <a class="nav-link" href="Álláslehetőség.html">Álláslehetőség</a>
+            </li>     
+          </ul>
      </div>
     </nav>
   </div>
+  <video class="video" autoplay loop muted >
+    <source  src="images/Overtakes.mp4">
+  </video>
+    
 
-    <video class="video" autoplay loop muted >
-      <source  src="images/Overtakes.mp4">
-    </video>
-
- 
-    <div class="container" >
+ <div id="cars_bg" class="BG">
+    <div class="container " >
     <div class="row">
       <!-- Motor -->
-      <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-3">
+      <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12 my-3">
         <div class="h-100 mx-1">
-          <div class="card Card_Car  px-2">
+          <div id="first_card" class="card Card_Car  px-2">
             <img src="images/Engine.png" data-bs-toggle="collapse" data-bs-target="#collapseEngine" alt="Motor" class="card-img-top mx-auto">
             <div class="card-body">
 
               <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#collapseEngine">Motor</h5>
               <div class="collapse" id="collapseEngine">
-                  <h6 class="fst-italic">V6 Hybrid</h6>
-                  <p class="card-text">A mondókából mindenki által ismerős vakvarjúról kevesen tudják, hogy ez a név tulajdonképpen a bakcsót takarja. Az egyik leggyakoribb hazai gémféle. Nagy telepei alakulhatnak ki, ezek közelében a kedvezőtlen változások miatt lokálisan sok pár költése meghiúsulhat. Szerencsére mára a nagy gémtelepek többsége védett területen található, ezekről pedig a természetvédelem megfelelően gondoskodik. Vonuló madár, március-április táján érkezik vissza afrikai telelőterületeiről. Az őszi vonulás szeptemberben kezdődik, de az időjárás függvényében el is húzódhat.</p>
+                  <h6 class="fw-bold">V6 Hybrid</h6>
+                  <p class="card-text">
+                      A forma 1 szabályzata miatt mi autóink is V6-os hybrid motorral mennek. Ezeket a motrokat nem mi készítjük, hanem mióta csatlakoztunk a sporthoz, a 
+                      Ferraritól vesszük. Maga a belső égésű V6os motor kb. 800-850 lóerőt, míg az energia-visszanyerő rendszer 150-200-at tud leadni. Az energia-visszanyerő
+                      rendszer kétféleképpen termel vissza energiát: A fékezésből kinetikus, a motorból kijövő gázokból pedig hőenergiát, amit a átalakít mozgásivá.
+                  </p>
               </div>
             </div> 
           </div>
         </div>    
       </div>
       <!-- Aero  -->
-      <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-3">
+      <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12 my-3">
         <div class="h-100 mx-1">
           <div class="card Card_Car  px-2">
             <img src="images/FrontWing_Outlined.png" data-bs-toggle="collapse" data-bs-target="#collapseAero" alt="Motor" class="card-img-top mx-auto">
@@ -64,15 +67,19 @@
 
               <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#collapseAero">Aerodinamika</h5>
               <div class="collapse" id="collapseAero">
-                  <h6 class="fst-italic">V6 Hybrid</h6>
-                  <p class="card-text">A mondókából mindenki által ismerős vakvarjúról kevesen tudják, hogy ez a név tulajdonképpen a bakcsót takarja. Az egyik leggyakoribb hazai gémféle. Nagy telepei alakulhatnak ki, ezek közelében a kedvezőtlen változások miatt lokálisan sok pár költése meghiúsulhat. Szerencsére mára a nagy gémtelepek többsége védett területen található, ezekről pedig a természetvédelem megfelelően gondoskodik. Vonuló madár, március-április táján érkezik vissza afrikai telelőterületeiről. Az őszi vonulás szeptemberben kezdődik, de az időjárás függvényében el is húzódhat.</p>
+                  <h6 class="fw-bold">ER8</h6>
+                  <p class="card-text">
+                      Az aerodinamika a mai Forma 1 egyik legfontosabb része, mivel a csapatok motrai nagyon közel vannak egymáshoz, itt lehet nagyobb előnyre szert tenni. 
+                      Az autónk  főtervezője Xavier Acosta: Ecuadori mérnök, valamint barátja José Agusto. A csapatunkban körülbelül 200 mérnök dolgozik, ezért főtervezőink
+                      se az egész autót tervezik, hanem mindenki csak egy kis részt azon. Xavier például az első szárny szélén lévő kis légelvezetőt tervezte.
+                  </p>
               </div>
             </div> 
           </div>
         </div>
      </div>
     <!-- Gumik -->
-    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-3">
+    <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12 my-3">
       <div class="h-100 mx-1">
         <div class="card Card_Car  px-2">
           <img src="images/Pierelli.png" data-bs-toggle="collapse" data-bs-target="#collapseTyre" alt="Gumi" class="card-img-top mx-auto py-2">
@@ -80,15 +87,19 @@
 
             <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#collapseTyre">Gumik</h5>
             <div class="collapse" id="collapseTyre">
-                <h6 class="fst-italic">Pirelli</h6>
-                <p class="card-text">A mondókából mindenki által ismerős vakvarjúról kevesen tudják, hogy ez a név tulajdonképpen a bakcsót takarja. Az egyik leggyakoribb hazai gémféle. Nagy telepei alakulhatnak ki, ezek közelében a kedvezőtlen változások miatt lokálisan sok pár költése meghiúsulhat. Szerencsére mára a nagy gémtelepek többsége védett területen található, ezekről pedig a természetvédelem megfelelően gondoskodik. Vonuló madár, március-április táján érkezik vissza afrikai telelőterületeiről. Az őszi vonulás szeptemberben kezdődik, de az időjárás függvényében el is húzódhat.</p>
+                <h6 class="fw-bold">Pirelli</h6>
+                <p class="card-text">
+                    Mint minden másik Forma 1-es csapat, mi is a Pirellitől kapjuk a gumikat, egész pontosan minden hétvégén 13 szett száraz, és 5 szett esőgumit.
+                    Ezen kívül kerékcsere gyakorlásra még 3 szettet kapunk, onnan lehet ezeket felismerni, hogy oldalfaluk sötét. Nagyon fontos a gumik megfelelő 
+                    hőmérsékleten tartása a gyors köridők eléréséhez, ráadásul a lágy, a közepes és a kemény mind különböző tartományban működik jól. Mi mindig a közepesre tervezzük autónkat.
+                </p>
             </div>
           </div> 
         </div>
       </div>
     </div>
     <!-- Autobeallitas -->
-    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 my-3">
+    <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-12 my-3">
       <div class="h-100 mx-1">
         <div class="card Card_Car  px-2">
           <img src="images/Setup.png" data-bs-toggle="collapse" data-bs-target="#collapseSetup" alt="Gumi" class="card-img-top mx-auto py-2">
@@ -96,8 +107,12 @@
 
             <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#collapseSetup">Autóbeállításaink</h5>
             <div class="collapse" id="collapseSetup">
-                <h6 class="fst-italic">V6 Hybrid</h6>
-                <p class="card-text">A mondókából mindenki által ismerős vakvarjúról kevesen tudják, hogy ez a név tulajdonképpen a bakcsót takarja. Az egyik leggyakoribb hazai gémféle. Nagy telepei alakulhatnak ki, ezek közelében a kedvezőtlen változások miatt lokálisan sok pár költése meghiúsulhat. Szerencsére mára a nagy gémtelepek többsége védett területen található, ezekről pedig a természetvédelem megfelelően gondoskodik. Vonuló madár, március-április táján érkezik vissza afrikai telelőterületeiről. Az őszi vonulás szeptemberben kezdődik, de az időjárás függvényében el is húzódhat.</p>
+                <h6 class="fw-bold">IBM</h6>
+                <p class="card-text">
+                    Autóink beállításában nagyon sokat segít az IBM. Segítségükkel egyszerre több száz szimulációt folytathatunk, hogy megtaláljuk az ideális autó beállítást.
+                    Ezután az autó finomhangolásában teszt és szimulátor pilótáink: Kevin és Erik segítenek. Nincs saját szimulátorunk, ezért ezt is a Ferraritól béreljük.
+                    Mivel a mostanit ők használják, ezért még a régi 2010es szimulátorukat tudják csak átadni. Ez gond lehet, de szimulátor pilótáink még nem panaszkodtak.
+                </p>
             </div>
           </div> 
         </div>
@@ -105,6 +120,7 @@
     </div>
    </div>
   </div>
+</div>
 
   
  
